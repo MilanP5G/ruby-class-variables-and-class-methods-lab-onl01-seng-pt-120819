@@ -59,7 +59,10 @@ class Song
       if @@artist_count[artists]
         @@artist_count[artists] += 1
       else 
-        @@
+        @@artist_count[artists] = 1
+      end 
+    end 
+    return @@artist_count
   end
      
 end 
